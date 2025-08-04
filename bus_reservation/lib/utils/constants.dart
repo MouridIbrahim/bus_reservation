@@ -23,13 +23,13 @@ const String routeNameReservationPage = 'reservation';
 
 
 const cities = [
-  'Dhaka',
-  'Chittagong',
-  'Sylhet',
-  'Bandarban',
-  'Rajshahi',
-  'Khagrachari',
-  'Rangamati',
+  'Casablanca',
+  'Rabat',
+  'Marrakech',
+  'Fes',
+  'Tangier',
+  'Agadir',
+  'Meknes'
 ];
 
 enum ResponseStatus {
