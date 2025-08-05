@@ -1,8 +1,13 @@
+import 'package:bus_reservation/providers/AppDataProvider.dart';
 import 'package:bus_reservation/screens/search_page.dart';
+import 'package:bus_reservation/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(ChangeNotifierProvider(
+    create: (context) => Appdataprovider(),
+    child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -11,13 +16,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        brightness: Brightness.light
-      ),
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
       home: SearchPage(),
     );
   }
 }
-

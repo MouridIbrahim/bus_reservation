@@ -33,6 +33,7 @@ const cities = [
 ];
 
 enum ResponseStatus {
+  // ignore: constant_identifier_names
   SAVED, FAILED, UNAUTHORIZED, AUTHORIZED, EXPIRED, NONE,
 }
 
