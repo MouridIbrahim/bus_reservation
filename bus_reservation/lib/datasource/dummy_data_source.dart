@@ -79,7 +79,7 @@ class DummyDataSource extends DataSource {
       final route = TempDB.tableRoute.firstWhere(
         (r) => r.cityFrom == cityFrom && r.cityTo == cityTo,);
       return route;
-    } on StateError catch (e) {
+    } on StateError {
       return null; // No route found
     }
   }
