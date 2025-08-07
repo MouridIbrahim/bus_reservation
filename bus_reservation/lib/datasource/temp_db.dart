@@ -185,33 +185,162 @@ class TempDB {
   ];
 
   static List<BusSchedule> tableSchedule = [
+    // Casablanca-Rabat (Route 1)
     BusSchedule(
       scheduleId: 1,
       bus: tableBus[0],
       busRoute: tableRoute[0],
-      departureTime: '18:00',
-      ticketPrice: 2000,
+      departureTime: '06:00',
+      ticketPrice: 70,
     ),
     BusSchedule(
       scheduleId: 2,
       bus: tableBus[1],
       busRoute: tableRoute[0],
-      departureTime: '20:00',
-      ticketPrice: 1600,
+      departureTime: '08:00',
+      ticketPrice: 70,
     ),
     BusSchedule(
       scheduleId: 3,
       bus: tableBus[2],
       busRoute: tableRoute[0],
-      departureTime: '22:00',
-      ticketPrice: 1000,
+      departureTime: '10:00',
+      ticketPrice: 70,
     ),
+
+    // Casablanca-Marrakech (Route 2)
     BusSchedule(
       scheduleId: 4,
       bus: tableBus[0],
       busRoute: tableRoute[1],
-      departureTime: '18:00',
-      ticketPrice: 2000,
+      departureTime: '05:30',
+      ticketPrice: 120,
+    ),
+    BusSchedule(
+      scheduleId: 5,
+      bus: tableBus[1],
+      busRoute: tableRoute[1],
+      departureTime: '07:30',
+      ticketPrice: 120,
+    ),
+    BusSchedule(
+      scheduleId: 6,
+      bus: tableBus[2],
+      busRoute: tableRoute[1],
+      departureTime: '09:30',
+      ticketPrice: 120,
+    ),
+
+    // Casablanca-Fes (Route 3)
+    BusSchedule(
+      scheduleId: 7,
+      bus: tableBus[0],
+      busRoute: tableRoute[2],
+      departureTime: '06:00',
+      ticketPrice: 150,
+    ),
+    BusSchedule(
+      scheduleId: 8,
+      bus: tableBus[1],
+      busRoute: tableRoute[2],
+      departureTime: '09:00',
+      ticketPrice: 150,
+    ),
+    BusSchedule(
+      scheduleId: 9,
+      bus: tableBus[2],
+      busRoute: tableRoute[2],
+      departureTime: '12:00',
+      ticketPrice: 150,
+    ),
+
+    // Casablanca-Tangier (Route 4)
+    BusSchedule(
+      scheduleId: 10,
+      bus: tableBus[0],
+      busRoute: tableRoute[3],
+      departureTime: '07:00',
+      ticketPrice: 180,
+    ),
+    BusSchedule(
+      scheduleId: 11,
+      bus: tableBus[1],
+      busRoute: tableRoute[3],
+      departureTime: '10:00',
+      ticketPrice: 180,
+    ),
+
+    // Casablanca-Agadir (Route 5)
+    BusSchedule(
+      scheduleId: 12,
+      bus: tableBus[0],
+      busRoute: tableRoute[4],
+      departureTime: '06:00',
+      ticketPrice: 200,
+    ),
+    BusSchedule(
+      scheduleId: 13,
+      bus: tableBus[1],
+      busRoute: tableRoute[4],
+      departureTime: '12:00',
+      ticketPrice: 200,
+    ),
+
+    // Casablanca-Meknes (Route 6)
+    BusSchedule(
+      scheduleId: 14,
+      bus: tableBus[0],
+      busRoute: tableRoute[5],
+      departureTime: '07:00',
+      ticketPrice: 100,
+    ),
+    BusSchedule(
+      scheduleId: 15,
+      bus: tableBus[1],
+      busRoute: tableRoute[5],
+      departureTime: '10:00',
+      ticketPrice: 100,
+    ),
+
+    // Rabat-Marrakech (Route 7)
+    BusSchedule(
+      scheduleId: 16,
+      bus: tableBus[0],
+      busRoute: tableRoute[6],
+      departureTime: '06:30',
+      ticketPrice: 130,
+    ),
+    BusSchedule(
+      scheduleId: 17,
+      bus: tableBus[1],
+      busRoute: tableRoute[6],
+      departureTime: '09:30',
+      ticketPrice: 130,
+    ),
+
+    // Rabat-Fes (Route 8)
+    BusSchedule(
+      scheduleId: 18,
+      bus: tableBus[0],
+      busRoute: tableRoute[7],
+      departureTime: '07:00',
+      ticketPrice: 90,
+    ),
+    BusSchedule(
+      scheduleId: 19,
+      bus: tableBus[1],
+      busRoute: tableRoute[7],
+      departureTime: '10:00',
+      ticketPrice: 90,
+    ),
+
+    // Rabat-Tangier (Route 9)
+    BusSchedule(
+      scheduleId: 20,
+      bus: tableBus[0],
+      busRoute: tableRoute[8],
+      departureTime: '08:00',
+      ticketPrice: 110,
     ),
   ];
   static List<BusReservation> tableReservation = [];

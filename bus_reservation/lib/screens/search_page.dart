@@ -191,10 +191,21 @@ class _SearchPageState extends State<SearchPage> {
       return;
     }
     if (_formKey.currentState!.validate()) {
-      Provider.of<Appdataprovider>(
-        context,
-        listen: false,
-      ).getRouteByCityFromAndCityTo(fromCity!, toCity!).then((route) {});
+      Provider.of<Appdataprovider>(context, listen: false)
+          .getRouteByCityFromAndCityTo(fromCity!, toCity!)
+          .then((route) {
+            Navigator.pushNamed(
+              context,
+              routeNameSearchResultPage,
+              arguments: [
+                route,
+                 getformatedDate(selectedDate!),
+              ],
+            );
+          })
+          .catchError((error) {
+            Snackbar(context, 'Error: $error');
+          });
     }
   }
 }
