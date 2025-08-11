@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 
 class Appdataprovider extends ChangeNotifier{
 
-  List<BusSchedule> _availableRoutes = [];
+  final List<BusSchedule> _availableRoutes = [];
   List<BusSchedule> get availableRoutes => _availableRoutes;
 
   final DataSource _dataSource = DummyDataSource();

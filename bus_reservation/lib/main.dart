@@ -1,6 +1,7 @@
 import 'package:bus_reservation/providers/AppDataProvider.dart';
-import 'package:bus_reservation/screens/search_page.dart';
-import 'package:bus_reservation/screens/search_page_results.dart';
+import 'package:bus_reservation/screens/Search_page.dart';
+import 'package:bus_reservation/screens/Search_page_results.dart';
+import 'package:bus_reservation/screens/Seat_plan_page.dart';
 import 'package:bus_reservation/theme.dart';
 import 'package:bus_reservation/utils/constants.dart';
 import 'package:flutter/material.dart';
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
       routes: {
         routeNameHome:(context ) => SearchPage(),
         routeNameSearchResultPage: (context) => const SearchPageResults(),
+        routeNameSeatPlanPage: (context) => const SeatPlanView(),
       },
     );
   }

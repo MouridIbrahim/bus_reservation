@@ -37,7 +37,13 @@ class SearchPageResults extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: scheduleList.map((schedule) {
                       return InkWell(
-                        onTap: (){},
+                        onTap: () => 
+                          Navigator.pushNamed(
+                            context,
+                            routeNameSeatPlanPage,
+                            arguments: [schedule, selectedDate],
+                          )
+                        ,
                         child: Card(
                         
                           child: Column(
